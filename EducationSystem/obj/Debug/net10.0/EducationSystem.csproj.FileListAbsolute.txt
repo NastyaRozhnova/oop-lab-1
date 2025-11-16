@@ -1,0 +1,14 @@
+/Users/nastya/lab1 oop/EducationSystem/bin/Debug/net10.0/EducationSystem
+/Users/nastya/lab1 oop/EducationSystem/bin/Debug/net10.0/EducationSystem.deps.json
+/Users/nastya/lab1 oop/EducationSystem/bin/Debug/net10.0/EducationSystem.runtimeconfig.json
+/Users/nastya/lab1 oop/EducationSystem/bin/Debug/net10.0/EducationSystem.dll
+/Users/nastya/lab1 oop/EducationSystem/bin/Debug/net10.0/EducationSystem.pdb
+/Users/nastya/lab1 oop/EducationSystem/obj/Debug/net10.0/EducationSystem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nastya/lab1 oop/EducationSystem/obj/Debug/net10.0/EducationSystem.AssemblyInfoInputs.cache
+/Users/nastya/lab1 oop/EducationSystem/obj/Debug/net10.0/EducationSystem.AssemblyInfo.cs
+/Users/nastya/lab1 oop/EducationSystem/obj/Debug/net10.0/EducationSystem.csproj.CoreCompileInputs.cache
+/Users/nastya/lab1 oop/EducationSystem/obj/Debug/net10.0/EducationSystem.dll
+/Users/nastya/lab1 oop/EducationSystem/obj/Debug/net10.0/refint/EducationSystem.dll
+/Users/nastya/lab1 oop/EducationSystem/obj/Debug/net10.0/EducationSystem.pdb
+/Users/nastya/lab1 oop/EducationSystem/obj/Debug/net10.0/EducationSystem.genruntimeconfig.cache
+/Users/nastya/lab1 oop/EducationSystem/obj/Debug/net10.0/ref/EducationSystem.dll
