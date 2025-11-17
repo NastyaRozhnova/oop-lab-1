@@ -81,7 +81,15 @@ namespace EducationSystem
         public IReadOnlyCollection<Student> GetStudentsForCourse(int courseId)
         {
             var course = _courses.FirstOrDefault(c => c.Id == courseId);
-            return course?.Students ?? Array.Empty<Student>();
+
+            if (course != null && course.Students != null)
+            {
+                return course.Students;
+            }
+            else
+            {
+                return Array.Empty<Student>();
+            }
         }
 
         public IReadOnlyCollection<Course> GetAllCourses() => _courses.AsReadOnly();
