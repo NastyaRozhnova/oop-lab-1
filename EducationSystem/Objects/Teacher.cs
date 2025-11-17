@@ -10,7 +10,9 @@ namespace EducationSystem
         public Teacher(int id, string name)
         {
             Id = id;
-            Name = name ?? throw new ArgumentNullException(nameof(name));
+            if (name == null)
+                throw new ArgumentNullException(nameof(name));
+            Name = name; 
         }
 
         public override string ToString() => $"{Name} ({Id})";

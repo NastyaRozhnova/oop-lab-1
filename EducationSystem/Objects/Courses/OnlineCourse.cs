@@ -19,8 +19,13 @@ namespace EducationSystem
         public OnlineCourse(int id, string title, string platform, string url)
             : base(id, title)
         {
-            Platform = platform ?? throw new ArgumentNullException(nameof(platform));
-            Url = url ?? throw new ArgumentNullException(nameof(url));
+            if (platform == null)
+                throw new ArgumentNullException(nameof(platform));
+            Platform = platform;
+
+            if (url == null)
+                throw new ArgumentNullException(nameof(url));
+            Url = url;
         }
 
         public override string ToString() =>

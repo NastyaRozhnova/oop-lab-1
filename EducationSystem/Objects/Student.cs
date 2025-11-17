@@ -12,9 +12,13 @@ namespace EducationSystem
         public Student(int id, string name, int age, string gender)
         {
             Id = id;
-            Name = name ?? throw new ArgumentNullException(nameof(name));
+            if (name == null)
+                throw new ArgumentNullException(nameof(name));
+            Name = name;
             Age = age;
-            Gender = gender ?? throw new ArgumentNullException(nameof(gender));
+            if (gender == null)
+                throw new ArgumentNullException(nameof(gender));
+            Gender = gender;
         }
 
         public override string ToString()

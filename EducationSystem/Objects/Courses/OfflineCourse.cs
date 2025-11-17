@@ -17,7 +17,10 @@ namespace EducationSystem
         public OfflineCourse(int id, string title, string location)
             : base(id, title)
         {
-            Location = location ?? throw new ArgumentNullException(nameof(location));
+            if (location == null)
+                throw new ArgumentNullException(nameof(location));
+
+            Location = location;
         }
 
         public override string ToString() =>

@@ -23,12 +23,18 @@ namespace EducationSystem
         protected Course(int id, string title)
         {
             Id = id;
-            Title = title ?? throw new ArgumentNullException(nameof(title));
+            if (title == null)
+                throw new ArgumentNullException(nameof(title));
+
+            Title = title;
         }
 
         public void AssignTeacher(Teacher teacher)
         {
-            Teacher = teacher ?? throw new ArgumentNullException(nameof(teacher));
+            if (teacher == null)
+                throw new ArgumentNullException(nameof(teacher));
+
+            Teacher = teacher;
         }
 
         public void RemoveTeacher()
@@ -38,7 +44,9 @@ namespace EducationSystem
 
         public void EnrollStudent(Student student)
         {
-            if (student == null) throw new ArgumentNullException(nameof(student));
+            if (student == null) 
+                throw new ArgumentNullException(nameof(student));
+
             if (_students.Any(s => s.Id == student.Id))
                 return;
             _students.Add(student);
@@ -53,7 +61,17 @@ namespace EducationSystem
 
         public override string ToString()
         {
-            var teacherName = Teacher?.Name ?? "Преподаватель не назначен";
+            string teacherName;
+
+            if (Teacher != null && Teacher.Name != null)
+            {
+                teacherName = Teacher.Name;
+            }
+            else
+            {
+                teacherName = "Преподаватель не назначен";
+            }
+            
             return $"{Title} [{CourseType}] (Id: {Id}), преподаватель: {teacherName}, студентов: {_students.Count}";
         }
     }

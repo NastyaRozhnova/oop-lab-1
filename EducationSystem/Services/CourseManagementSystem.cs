@@ -23,7 +23,8 @@ namespace EducationSystem
 
         public void RegisterCourse(Course course)
         {
-            if (course == null) throw new ArgumentNullException(nameof(course));
+            if (course == null)    
+                throw new ArgumentNullException(nameof(course));
             _courses.Add(course);
         }
 
@@ -96,7 +97,8 @@ namespace EducationSystem
 
         public IReadOnlyCollection<Course> GetCoursesByTeacher(Teacher teacher)
         {
-            if (teacher == null) throw new ArgumentNullException(nameof(teacher));
+            if (teacher == null) 
+                throw new ArgumentNullException(nameof(teacher));
             return GetCoursesByTeacher(teacher.Id);
         }
 

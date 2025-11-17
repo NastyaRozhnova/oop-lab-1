@@ -94,6 +94,7 @@
 /Users/nastya/lab1 oop/EducationSystem.Tests/obj/Debug/net10.0/EducationSystem.Tests.AssemblyInfoInputs.cache
 /Users/nastya/lab1 oop/EducationSystem.Tests/obj/Debug/net10.0/EducationSystem.Tests.AssemblyInfo.cs
 /Users/nastya/lab1 oop/EducationSystem.Tests/obj/Debug/net10.0/EducationSystem.Tests.csproj.CoreCompileInputs.cache
+/Users/nastya/lab1 oop/EducationSystem.Tests/obj/Debug/net10.0/EducationSystem.Tests.sourcelink.json
 /Users/nastya/lab1 oop/EducationSystem.Tests/obj/Debug/net10.0/Educatio.AB081237.Up2Date
 /Users/nastya/lab1 oop/EducationSystem.Tests/obj/Debug/net10.0/EducationSystem.Tests.dll
 /Users/nastya/lab1 oop/EducationSystem.Tests/obj/Debug/net10.0/refint/EducationSystem.Tests.dll
