@@ -88,9 +88,15 @@ namespace EducationSystem
 
         public IReadOnlyCollection<Course> GetCoursesByTeacher(int teacherId)
         {
-            var result = _courses
-                .Where(c => c.Teacher != null && c.Teacher.Id == teacherId)
-                .ToList();
+            var result = new List<Course>();
+
+            foreach (var course in _courses)
+            {
+                if (course.Teacher != null && course.Teacher.Id == teacherId)
+                {
+                    result.Add(course);
+                }
+            }
 
             return result.AsReadOnly();
         }
@@ -104,9 +110,19 @@ namespace EducationSystem
 
         public IReadOnlyCollection<Course> GetCoursesForStudent(int studentId)
         {
-            var result = _courses
-                .Where(c => c.Students.Any(s => s.Id == studentId))
-                .ToList();
+            var result = new List<Course>();
+
+            foreach (var course in _courses)
+            {
+                foreach (var student in course.Students)
+                {
+                    if (student.Id == studentId)
+                    {
+                        result.Add(course);
+                        break; 
+                    }
+                }
+            }
 
             return result.AsReadOnly();
         }
